@@ -1,0 +1,58 @@
+.rotated-parent{
+    height: 100vh;
+    background-color: #2A2A2A;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.rotated-parent .row{
+    border: 5px solid white;
+    transform: rotate(15deg);
+}
+.rotated-parent h1{
+    color: #00FF88;
+    font-size: 70px;
+    border-bottom: 2px dashed white;
+    width: max-content;
+}
+p{
+    color: white;
+    font-size: 24px;
+}
+.rotated-parent p b{
+    color: #FFC107;
+}
+.rotated-text-part{
+    border-left: 5px solid #fff;
+    padding-left: 25px;
+}
+.icons-container{
+    margin-left: 55px;
+}
+.icons{
+    font-size: 20px;
+    padding: 0 4px; 
+    color: #fff;
+}
+
+
+@media screen and (max-width : 767px){
+    .rotated-parent .row{
+        transform: rotate(0deg);
+        border: none;
+    }
+    .rotated-text-part{
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .rotated-text-part h1{
+        font-size: 35px;
+    }
+    .rotated-text-part p{
+        margin-top: -7px;
+        font-size: 20px;
+    }
+    .icons-container{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+}
